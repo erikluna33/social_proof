@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Spartan', 'sans-serif';
+}
+.attribution{
+    text-align: center;
+    margin: 10px;
+}
+.user:hover{
+    transform: scale(1.1);
+}
+.star-boxes, .user{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 414px) {
+    body{
+        background-image: url('images/bg-pattern-top-desktop.svg');
+    }
+    .star-boxes{
+        animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+
+    @keyframes slideInFromRight {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    .data-heading{
+        color: hsl(300, 43%, 22%);
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .web-mantra{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        color: hsl(303, 10%, 53%);
+    }
+    .review-box, .report-box, .best-box{
+        background-color: #F7F2F8;
+        width: 90%;
+        min-height: 80px;
+        margin: 20px auto;
+        border-radius: 10px;
+        color: hsl(300, 43%, 22%);
+        text-align: center;
+
+    }
+    .stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+    }
+    .stars img{
+        padding: 0 5px 0 5px;
+    }
+
+    .user{
+        width: 90%;
+        margin: 50px auto;
+        background-color: hsl(300, 43%, 22%);
+        min-height: 350px;
+        border-radius: 10px;
+        position: relative;
+        transition: transform .2s;
+        animation: 1s ease-out 0s 1 slideInFromBottom;
+    }
+    @keyframes slideInFromBottom {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    .img-user-box{
+        display: inline-block;
+        margin: 30px;
+    }
+    .img-user-box img{
+        border-radius: 80px;
+    }
+    .name-verified-buyer{
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+    }
+    .name-verified-buyer h4{
+        color: #E7DCE7;
+        padding-bottom: 5px;
+    }
+    .name-verified-buyer p{
+        color: #883971;
+    }
+    .user-review{
+        width: 85%;
+        margin: 0 auto;
+        color: #EEEDF6;
+        line-height: 2;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+      body{
+          margin: 9%;
+      }
+    .data-heading{
+        /* outline: red dotted; */
+        width: 28%;
+        text-align: left;
+        position: relative;
+        right: 30%;
+        margin-bottom: 20px;
+    }
+    .web-mantra{
+        width: 40%;
+        text-align: left;
+        position: relative;
+        right: 24%;
+        line-height: 1.5;
+    }
+    .star-boxes{
+        width: 40%;
+        position: relative;
+        left: 57%;
+        bottom: 200px;
+        animation: 1s ease-out 0s 1 slideInFromRight;
+    }
+
+    @keyframes slideInFromRight {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    .review-box, .report-box, .best-box{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        min-height: 25%;
+    }
+    .review-box h5{
+        padding-top: 20px;
+    }
+    .report-box h5{
+        padding-top: 20px;
+    }
+    .best-box h5{
+        padding-top: 20px;
+    }
+    .review-box{
+        position: relative;
+        right: 25%;
+    }
+    .report-box{
+        position: relative;
+        right: 15%;
+    }
+    .user{
+        width: 28%;
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        bottom: 100px;
+        margin: 5px;
+        transition: transform .2s;
+        animation: 1s ease-out 0s 1 slideInFromBottom;
+    }
+
+    @keyframes slideInFromBottom {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
+  }
